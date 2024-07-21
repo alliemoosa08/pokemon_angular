@@ -1,0 +1,14 @@
+.gitignore
+README.md
+api.module.ts
+api/api.ts
+api/pokemons.service.ts
+configuration.ts
+encoder.ts
+git_push.sh
+index.ts
+model/getPokemonByID200Response.ts
+model/getPokemons200ResponseInner.ts
+model/models.ts
+param.ts
+variables.ts

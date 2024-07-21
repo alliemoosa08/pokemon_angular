@@ -1,0 +1,28 @@
+<div class="container">
+    <br>
+    <span class="header" *ngIf="PokemonList.length">Names and Pictures of the first {{PokemonList.length}} Pokémon's </span>
+    <span class="header" *ngIf="!PokemonList.length">No Pokémons found</span>
+    <br>
+
+    <div class="alignSeachDiv">
+        <div class="searchDiv">
+            <mat-icon>search</mat-icon>
+            <input type="text" [(ngModel)]="searchText" (input)="filterItems()" placeholder="find pokémon by name"
+            ngModel>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="card" *ngFor="let pokemoneData of PokemonList">
+            <span class="pokemonName">{{ pokemoneData.name }}</span>
+            <img class="card-img" [src]="pokemoneData.imageUrl" alt="pokemoneData.name">
+            <div class="view-details" (click)="viewDetails(pokemoneData.id)">
+                <span class="viewDetailsLabel">View Details</span>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

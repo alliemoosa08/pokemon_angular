@@ -1,0 +1,31 @@
+<div class="container">
+    <br>
+    <span class="header">Pokémon's Details</span>
+    <br>
+
+    <div class="row">
+        <div class="details">
+            <div class="align-details">
+                <ul class="detail-list">
+                    <li class="detail-item">Name: {{PokemonDetailsData?.name}}</li>
+                    <li class="detail-item">ID: {{PokemonDetailsData?.id}}</li>
+                    <li class="detail-item">Height: {{PokemonDetailsData?.height}}</li>
+                    <li class="detail-item">Weight: {{PokemonDetailsData?.weight}}</li>
+                    <li class="detail-item">Base Experience: {{PokemonDetailsData?.base_experience}}</li>
+                    <li class="detail-item">Order: {{PokemonDetailsData?.order}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="img-div">
+            <img class="card-img" [src]="PokemonDetailsData?.sprites?.front_default" alt="PokemonDetailsData.name">
+        </div>
+    </div>
+
+    <div class="view-pokemon-list-container">
+        <div class="view-pokemon-list" (click)="viewPokemonList()">
+            <span class="view-pokemon-list-label">View Pokemone List</span>
+        </div>
+    </div>
+
+</div>
