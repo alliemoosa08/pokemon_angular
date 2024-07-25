@@ -1,5 +1,12 @@
 #configuration file defines the steps to build, push, and deploy a Docker container using Google Cloud Build
 
+substitutions:
+  _GCR_HOSTNAME: 'gcr.io'
+  _PROJECT_ID: 'pokemon-project-430504'
+  _SERVICE_NAME: 'pokemon-angular'
+  _DEPLOY_REGION: 'us-central1'
+  _PLATFORM: 'managed'
+
 steps:
 # Step 1: Build the Docker image
   - name: gcr.io/cloud-builders/docker
