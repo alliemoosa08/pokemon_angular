@@ -26,6 +26,7 @@ import { GetPokemons200ResponseInner } from '../model/getPokemons200ResponseInne
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
+import { environment } from '../../../environments/environment.development';
 
 
 
@@ -34,7 +35,7 @@ import { Configuration }                                     from '../configurat
 })
 export class PokemonsService {
 
-    protected basePath = 'https://pokemon-golang-elsciu4lea-uc.a.run.app';
+    protected basePath = environment.apiUrl;
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
     public encoder: HttpParameterCodec;

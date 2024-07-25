@@ -13,8 +13,8 @@ RUN npm ci
 # Copy the rest of the application
 COPY . .
 
-# Build the project
-RUN npm run build
+# Build the project in production mode
+RUN npm run build:prod
 
 # Use an Nginx image
 FROM nginx:1.26.0-alpine
