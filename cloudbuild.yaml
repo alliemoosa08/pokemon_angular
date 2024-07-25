@@ -34,3 +34,6 @@ timeout: 1200s
 # Specify the images to be pushed to the registry
 images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
