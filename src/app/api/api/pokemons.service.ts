@@ -34,7 +34,7 @@ import { Configuration }                                     from '../configurat
 })
 export class PokemonsService {
 
-    protected basePath = '';
+    protected basePath = 'https://pokemon-golang-elsciu4lea-uc.a.run.app';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
     public encoder: HttpParameterCodec;
