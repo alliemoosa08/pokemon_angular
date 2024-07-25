@@ -35,7 +35,7 @@ import { environment } from '../../../environments/environment.development';
 })
 export class PokemonsService {
 
-    protected basePath = environment.apiUrl;
+    protected basePath = 'https://pokemon-golang-elsciu4lea-uc.a.run.app';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
     public encoder: HttpParameterCodec;
