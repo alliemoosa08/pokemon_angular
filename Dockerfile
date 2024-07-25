@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:1.26.0-alpine
 
 # Expose the port that Angular serves on
-EXPOSE 80
+EXPOSE 8080
 
 # Copy the Nginx config
 COPY nginx.conf /etc/nginx/nginx.conf
