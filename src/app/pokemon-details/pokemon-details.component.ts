@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonsService } from '../api';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-pokemon-details',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './pokemon-details.component.html',
   styleUrl: './pokemon-details.component.css'
 })
