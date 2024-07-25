@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # Build the project
-RUN npm run build
+RUN npm run build:prod
 
 # Use an Nginx image
 FROM nginx:1.26.0-alpine
